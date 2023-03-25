@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+#navbar-principal {
+    background-color: #7FADF2;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navbar-navegacion li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    
+    
+}
+
+.navbar-navegacion li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-navegacion li a:hover {
+    color: #093867 ;
+    border-bottom: 1px solid #093867;
+    
+}
+
+article {
+    background-color: #55C2FF;
+}
