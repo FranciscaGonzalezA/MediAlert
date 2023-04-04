@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/formularios.css">
+    <title>MediAlert</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar-principal">
+            <img src="#" alt="" id="navbar-logo">
+            <ul class="navbar-navegacion">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Enigma</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+            <ul class="navbar-navegacion">
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Ingreso de pacientes</h2>
+        <form id="formulario-ingreso">
+                <label for="nombre">Nombre :</label>
+                <input type="text" id="name" placeholder="Nombre Apellido">
+                <label for="fechaNacimiento">Fecha de Nacimiento :</label>
+                <input type="date" id="fechaNacimiento">
+                <label for="fechaIngreso">Fecha de Ingreso :</label>
+                <input type="date" id="fechaIngreso">
+                <label for="rut">Rut :</label>
+                 <input type="text" id="rut" placeholder="11111111-1">
+                <label for="prevision">Previsión :</label>
+                <select name="prevision" id="prevision">
+                    <option value="">Seleccione</option>
+                    <option value="Fonasa">Fonasa</option>
+                    <option value="Isapre">Isapre</option>
+                </select>  
+                <label for="ubicacion">Ubicación :</label>
+                <input type="text" id="ubicacion" placeholder="sala 1">
+                <label for="estado">Estado :</label>
+                <select name="estado" id="estado">
+                    <option value="">Seleccione</option>
+                    <option value="Critico">Critico</option>
+                    <option value="Estable">Estable</option>
+                </select>
+        </form>
+    </main>
+</body>
+</html>
