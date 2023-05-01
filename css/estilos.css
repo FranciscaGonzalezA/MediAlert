@@ -18,7 +18,34 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "m m m"
+        "f f f";
+    gap: 10px;
+}
+
+img {
+    width: 28rem;
+    height: auto;
+    padding: 1vh;
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -78,6 +105,11 @@ nav ul li a:hover{
 }
 
 @media (max-width:700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav {
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -125,5 +157,4 @@ nav ul li a:hover{
 
 article {
     background-color: #55C2FF;
-
 }
