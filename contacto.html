@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/contacto.css" />
+    <title>MediAlert | Contactanos</title>
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/contacto.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar-principal">
+
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="hamborguesa">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <img src="#" alt="" id="navbar-logo" class="fa fa-plus-square fa-3x">
+
+            <ul class="navegacion">
+                <li><a href="./" class="fa fa-home"> Inicio</a></li>
+                <li><a href="/contacto.html" class="fa fa-cogs"> Contáctanos</a></li>
+                <li><a href="./informaciones.html" class="fa fa-info"> Informaciones</a></li>
+                <li><a href="./inicio-sesion.html" class="fa fa-user-md"> Iniciar sesión</a></li>
+                <li><a href="/registro.html" class="fa fa-sign-in"> Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contáctanos</h1>
+
+        <form action="contacto.html" method="POST">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" />
+                    <span></span>
+                </div>
+                <div>
+                    <label for="rut">RUT</label>
+                    <input type="text" id="rut" name="rut" placeholder="12345678-5" />
+                    <span></span>
+                </div>
+                <div>
+                    <label for="rut">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" />
+                    <span></span>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" />
+                    <span></span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensaje</legend>
+                <div>
+                    <label for="motivo">Motivo</label>
+                    <select name="motivo" id="motivo">
+                        <option value="">-- Por favor escoja un motivo--</option>
+                        <option value="cuenta-corriente">Dudas sobre la página</option>
+                        <option value="credito-hipotecario">Dudas a nuestros doctores</option>
+                    </select>
+                    <span></span>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="10"></textarea>
+                    <span></span>
+                </div>
+            </fieldset>
+
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+
+            <p class="mensaje-form"></p>
+        </form>
+    </main>
+
+    <!-- ###################################### -->
+    <footer class="main">
+        <section>
+            <h3>Quienes Somos</h3>
+            <ul>
+                <li><a href="#">¿Qué es MediAlert?</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#" class="icon">
+                        <svg width="854.54" height="854.54" version="1.1" viewBox="0 0 854.54 854.54"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m352.03 215.82c-6.6866-16.152-24.315-24.749-41.162-20.147l-76.418 20.841c-15.11 4.1683-25.617 17.889-25.617 33.52 0 214.84 174.2 389.04 389.04 389.04 15.631 0 29.352-10.508 33.52-25.617l20.841-76.418c4.6025-16.847-3.9946-34.475-20.147-41.162l-83.365-34.736c-14.155-5.905-30.567-1.8236-40.206 10.073l-35.083 42.812c-61.135-28.917-110.63-78.416-139.55-139.55l42.812-34.996c11.897-9.726 15.978-26.052 10.073-40.206l-34.736-83.365z"
+                                stroke-width=".86839" />
+                            <circle cx="427.27" cy="427.27" r="410.1" fill="none" stroke-width="34.339" />
+                        </svg>
+                        <span>600 600 6000</span>
+                    </a></li>
+            </ul>
+        </section>
+    </footer>
+    <footer class="garantia">
+        <img src="assets/img/isotipo.svg" alt="Logo Data Bank" />
+        <section>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ab, natus dolorem illum facilis unde aut
+                itaque saepe ut officia neque praesentium magnam adipisci nostrum modi. Fugiat cumque consequuntur
+                dolorem?
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
