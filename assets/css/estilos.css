@@ -1,0 +1,40 @@
+:root {
+    --primary: #42b983;
+    --secondary: #2e4469;
+    --background: #35495e;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #ffffff;
+    --blue-gradient: linear-gradient(90deg, #42b983, #35495e);
+    --button-hover: #5b79a2;
+    --text-shadow: .2rem .2rem .2rem #0d0d0e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "m m m"
+        "f f f";
+    gap: 10px;
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
+
