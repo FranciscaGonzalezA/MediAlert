@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MediAlert</title>
+    <script src="./js/inicio-sesion.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar-principal">
+
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="hamborguesa">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <img src="#" alt="" id="navbar-logo" class="fa fa-plus-square fa-3x">
+
+            <ul class="navegacion">
+                <li><a href="./" class="fa fa-home"> Inicio</a></li>
+                <li><a href="/contacto.html" class="fa fa-cogs"> Contáctanos</a></li>
+                <li><a href="./informaciones.html" class="fa fa-info"> Informaciones</a></li>
+                <li><a href="./inicio-sesion.html" class="fa fa-user-md"> Iniciar sesión</a></li>
+                <li><a href="/registro.html" class="fa fa-sign-in"> Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Inicio de Sesión</h1>
+    <form method="post" action="inicio-sesion.html">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena">
+
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</body>
+</html>

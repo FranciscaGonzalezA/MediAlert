@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+
+    <title>pag protegida</title>
+    <script>
+        const storageUsuario = localStorage.getItem("usuario");
+        if (storageUsuario == null) {
+            //window.location = "login.html";
+        }
+
+        const objetoUsuario = JSON.parse(storageUsuario);
+        const token = objetoUsuario.user.stsTokenManager.accessToken;
+
+        const baseUrl = '';
+        const url = baseUrl + 'usuario/checktoken';
+        
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token
+            }
+        }).then(respuesta => {
+            if (!respuesta.ok) {
+                throw new Error("Token no válido");
+            }
+        }).catch(error => {
+            //window.location = "login.html"
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar-principal">
+
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="hamborguesa">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <img src="#" alt="" id="navbar-logo" class="fa fa-plus-square fa-3x">
+
+            <ul class="navegacion">
+                <li><a href="./" class="fa fa-home"> Inicio</a></li>
+                <li><a href="/contacto.html" class="fa fa-cogs"> Contáctanos</a></li>
+                <li><a href="./informaciones.html" class="fa fa-info"> Informaciones</a></li>
+                <li><a href="./inicio-sesion.html" class="fa fa-user-md"> Iniciar sesión</a></li>
+                <li><a href="/registro.html" class="fa fa-sign-in"> Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Página Protegida</h1>
+</body>
+
+</html>
