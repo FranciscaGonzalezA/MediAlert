@@ -25,8 +25,7 @@ body {
     display: grid;
     grid-template-areas:
         "t t t"
-        "a n s"
-        "f f f";
+        "a n s";
     gap: 10px;
 }
 
@@ -36,16 +35,10 @@ img {
     padding: 1vh;
 }
 
-header {
-    grid-area: h;
-}
-
 h1 {
     grid-area: t;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 12vh;
-    
 }
 
 article {
@@ -60,20 +53,16 @@ aside {
     grid-area: s;
 }
 
-footer {
-    grid-area: f;
-}
+
 
 header {
     position: fixed;
     width: 100%;
 }
 
-header,
 article,
 section,
-aside,
-footer {
+aside {
     background-color: rgb(224, 224, 224);
 }
 
@@ -93,7 +82,8 @@ p {
 
 /* uppercase */
 
-button, h1 {
+button,
+h1 {
     text-transform: uppercase;
 }
 
@@ -130,7 +120,7 @@ button:hover {
     color: white;
 }
 
-p{
+p {
     text-align: justify;
 }
 
